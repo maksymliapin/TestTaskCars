@@ -7,7 +7,7 @@ namespace Packages.TestTaskCars.DI.Installers
     {
         public override void InstallBindings()
         {
-            Debug.Log("here");
+           
         }
     }
 }

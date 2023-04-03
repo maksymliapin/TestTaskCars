@@ -1,4 +1,3 @@
-using UnityEngine;
 using Zenject;
 
 namespace Packages.TestTaskCars.DI.Installers
@@ -7,7 +6,7 @@ namespace Packages.TestTaskCars.DI.Installers
     {
         public override void InstallBindings()
         {
-            Debug.Log("here");
+           
         }
     }
 }
