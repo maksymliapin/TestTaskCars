@@ -13,7 +13,8 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
 
         [SerializeField] private Transform placePlayer;
         [SerializeField] private CameraController cameraController;
-        [SerializeField] private GameObject buttons; 
+        [SerializeField] private GameObject buttons;
+        [SerializeField] private MapGenerator mapGenerator;
         private PlayerCarFactory playerCarFactory;
 
         [Inject]
@@ -22,9 +23,11 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
 
         public void PrepareLevel()
         {
-            Player = playerCarFactory.CreatePlayer(placePlayer);
+            Player = playerCarFactory.CreatePlayer();
+            Player.transform.position = placePlayer.position;
             cameraController.enabled = true;
             buttons.SetActive(true);
+            mapGenerator.Subscribe();
 
 
         }

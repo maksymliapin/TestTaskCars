@@ -10,10 +10,13 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
         private RoadFactory roadFactory;
 
         [Inject]
-        public void Construct(RoadFactory roadFactory) =>
+        public void Construct(RoadFactory roadFactory) => 
             this.roadFactory = roadFactory;
 
-        public void UpdateMap()
+        public void Subscribe() => 
+            levelConstructor.Player.EndRoadDetector.EndRoad += UpdateMap;
+
+        private void UpdateMap()
         {
             CreatNextRoad();
             DestroyLastRoad();
@@ -21,6 +24,9 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
 
         private void DestroyLastRoad()
         {
+            var lastRoad = levelConstructor.Roads[0];
+            levelConstructor.Roads.Remove(lastRoad);
+            Destroy(lastRoad.gameObject);
         }
 
         private void CreatNextRoad()
@@ -29,8 +35,10 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
             var lastRoundPosition = lastRound.transform.position;
             var offset = lastRound.GetComponent<SpriteRenderer>().bounds.size.z;
             var placeRound = new Vector3(lastRoundPosition.x, lastRoundPosition.y, lastRoundPosition.z + offset);
-            
-            levelConstructor.Roads.Add(roadFactory.CreateRoad(parentRoads, placeRound));
+
+            var road = roadFactory.CreateRoad(parentRoads);
+            levelConstructor.Roads.Add(road);
+            road.transform.position = placeRound;
         }
     }
 }

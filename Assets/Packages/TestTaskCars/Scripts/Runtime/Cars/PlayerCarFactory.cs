@@ -14,7 +14,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars
         private GameObject LoadPlayer() => 
             Resources.Load<GameObject>("Prefabs/Cars/Player/PlayerCar");
 
-        public Car CreatePlayer(Transform parent) => 
-            container.InstantiatePrefab(LoadPlayer(),parent).GetComponent<Car>();
+        public Car CreatePlayer() => 
+            container.InstantiatePrefab(LoadPlayer()).GetComponent<Car>();
     }
 }

@@ -11,8 +11,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.UI
         [SerializeField] private bool Isleft;
         [SerializeField] private LevelConstructor levelConstructor;
         [SerializeField] private Transform steeringWheel;
-        [SerializeField] private Transform leftBord;
-        [SerializeField] private Transform rightBord;
         private TweenerCore<Quaternion, Vector3, QuaternionOptions> tween;
         private float carSizeX;
         private SpriteRenderer carRenderer;
@@ -27,7 +25,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.UI
         {
             if (Isleft)
             {
-                var offset = leftBord.position.x + carSizeX;
+                var offset = levelConstructor.Roads[levelConstructor.Roads.Count -1].leftBord.position.x + carSizeX;
                 if (levelConstructor.Player.transform.position.x > offset)
                 {
                     levelConstructor.Player.CarMover.TurnLeft();
@@ -36,7 +34,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.UI
             }
             else
             {
-                var offset = rightBord.position.x - carSizeX;
+                var offset = levelConstructor.Roads[levelConstructor.Roads.Count -1].rightBord.position.x - carSizeX;
                 if (levelConstructor.Player.transform.position.x < offset)
                 {
                     levelConstructor.Player.CarMover.TurnRight();

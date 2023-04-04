@@ -21,10 +21,10 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
         private void LoadRoad() =>
             loadRoads = Resources.LoadAll<GameObject>("Prefabs/Roads").ToList();
 
-        public Road CreateRoad(Transform parent, Vector3 position)
+        public Road CreateRoad(Transform parent)
         {
             var prefab = loadRoads[Random.Range(0, loadRoads.Count)];
-            return container.InstantiatePrefab(prefab, position, Quaternion.identity, parent).GetComponent<Road>();
+            return container.InstantiatePrefab(prefab, parent).GetComponent<Road>();
         }
     }
 }
