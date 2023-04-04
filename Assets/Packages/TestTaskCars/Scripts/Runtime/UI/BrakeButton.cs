@@ -1,13 +1,13 @@
-﻿using Packages.TestTaskCars.Scripts.Runtime.Cars;
+﻿using Packages.TestTaskCars.Scripts.Runtime.Level;
 using UnityEngine;
 
 namespace Packages.TestTaskCars.Scripts.Runtime.UI
 {
     public class BrakeButton : MonoBehaviour
     {
-        [SerializeField] private CarMover car;
+        [SerializeField] private LevelConstructor levelConstructor;
         
         private void OnMouseDrag() => 
-            car.BrakeDown();
+            levelConstructor.Player.CarMover.BrakeDown();
     }
 }
