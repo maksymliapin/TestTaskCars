@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="496d17d5-7f80-4e1d-aad0-2a95792cb790" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/BrakeButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/BrakeButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/GasButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/GasButton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestTaskCars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestTaskCars/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scenes/LevelScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scenes/LevelScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/CarMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/CarMover.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/TurnButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/TurnButton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +79,7 @@
       <workItem from="1680532262525" duration="1208000" />
       <workItem from="1680535400733" duration="763000" />
       <workItem from="1680591392635" duration="7972000" />
-      <workItem from="1680605797076" duration="5543000" />
+      <workItem from="1680605797076" duration="7494000" />
     </task>
     <servers />
   </component>
