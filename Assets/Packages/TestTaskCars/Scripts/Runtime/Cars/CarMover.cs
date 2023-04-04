@@ -4,32 +4,40 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars
 {
     public class CarMover : MonoBehaviour
     {
-        public float speed;
-        
-        private void Awake() => 
-            Gas();
+        public float Speed;
+        public float MaxSpeed;
 
-        private void Update() => 
+        private void Update() =>
             Forward();
 
-        public void Gas() => 
-            speed += 1;
+        public void Gas()
+        {
+            if (Speed < MaxSpeed)
+            {
+                Speed += .05f;
+            }
+        }
 
         public void BrakeDown()
         {
-            if (speed != 0)
+            if (Speed >= 0)
             {
-                speed += 1;
+                Speed -= .1f;
             }
         }
-        
-        public void TurnRight() => 
-            transform.position += transform.right * speed * Time.deltaTime;
 
-        public void TurnLeft() => 
-            transform.position -= transform.right * speed * Time.deltaTime;
+        public void TurnRight() =>
+            transform.position += transform.right * Speed * Time.deltaTime;
 
-        private void Forward() => 
-            transform.position += transform.forward * speed * Time.deltaTime;
+        public void TurnLeft() =>
+            transform.position -= transform.right * Speed * Time.deltaTime;
+
+        private void Forward()
+        {
+            if (Speed > 0)
+            {
+                transform.position += transform.forward * Speed * Time.deltaTime;
+            }
+        }
     }
 }
