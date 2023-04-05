@@ -4,7 +4,8 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
 {
     public class Road : MonoBehaviour
     {
-        public Transform leftBord;
-        public Transform rightBord;
+        public Transform LeftBord;
+        public Transform RightBord;
+        public Transform Center;
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Packages.TestTaskCars.Scripts.Runtime.Cars
+namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
 {
     public class Car: MonoBehaviour
     {

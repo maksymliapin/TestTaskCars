@@ -12,34 +12,22 @@ namespace Packages.TestTaskCars.Scripts.Runtime.UI
         [SerializeField] private LevelConstructor levelConstructor;
         [SerializeField] private Transform steeringWheel;
         private TweenerCore<Quaternion, Vector3, QuaternionOptions> tween;
-        private float carSizeX;
         private SpriteRenderer carRenderer;
 
-        private void Awake()
-        {
+        private void Awake() =>
             carRenderer = levelConstructor.Player.CarRenderer;
-            carSizeX = carRenderer.bounds.size.x / 2;
-        }
 
         private void OnMouseDrag()
         {
             if (Isleft)
             {
-                var offset = levelConstructor.Roads[levelConstructor.Roads.Count -1].leftBord.position.x + carSizeX;
-                if (levelConstructor.Player.transform.position.x > offset)
-                {
-                    levelConstructor.Player.CarMover.TurnLeft();
-                    carRenderer.transform.DOLocalRotate(new Vector3(90, 0, 5), .5f);
-                }
+                levelConstructor.Player.CarMover.TurnLeft();
+                carRenderer.transform.DOLocalRotate(new Vector3(90, 0, 5), .5f);
             }
             else
             {
-                var offset = levelConstructor.Roads[levelConstructor.Roads.Count -1].rightBord.position.x - carSizeX;
-                if (levelConstructor.Player.transform.position.x < offset)
-                {
-                    levelConstructor.Player.CarMover.TurnRight();
-                    carRenderer.transform.DOLocalRotate(new Vector3(90, 0, -5), .5f);
-                }
+                levelConstructor.Player.CarMover.TurnRight();
+                carRenderer.transform.DOLocalRotate(new Vector3(90, 0, -5), .5f);
             }
         }
 

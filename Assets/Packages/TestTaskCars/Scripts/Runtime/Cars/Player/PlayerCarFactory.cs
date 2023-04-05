@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Zenject;
 
-namespace Packages.TestTaskCars.Scripts.Runtime.Cars
+namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
 {
     public class PlayerCarFactory
     {

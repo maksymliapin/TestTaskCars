@@ -219,8 +219,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85292987ad5a44db9ea7576fe2296096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftBord: {fileID: 446554380}
-  rightBord: {fileID: 988741214}
+  LeftBord: {fileID: 446554380}
+  RightBord: {fileID: 988741214}
+  Center: {fileID: 371180574}
 --- !u!1 &134039143
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,6 +751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelConstructor: {fileID: 1695680334}
+  pathData: {fileID: 11400000, guid: ea0f07512a63b5147b0b13904839d745, type: 2}
 --- !u!114 &681685130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1003,8 +1005,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85292987ad5a44db9ea7576fe2296096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftBord: {fileID: 0}
-  rightBord: {fileID: 0}
+  LeftBord: {fileID: 0}
+  RightBord: {fileID: 0}
+  Center: {fileID: 0}
 --- !u!1 &1526317081
 GameObject:
   m_ObjectHideFlags: 0

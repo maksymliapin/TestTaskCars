@@ -1,12 +1,21 @@
 ﻿using System.Collections;
+using Packages.TestTaskCars.Scripts.Runtime.Data;
 using UnityEngine;
+using Zenject;
 
-namespace Packages.TestTaskCars.Scripts.Runtime.Cars
+namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
 {
     public class SpeedPenaltyController : MonoBehaviour
     {
         [SerializeField] private CarMover car;
         private bool isUsed;
+        private PathData pathData;
+
+        [Inject]
+        public void Construct(PathData pathData)
+        {
+            this.pathData = pathData;
+        }
 
         public void StartPenalty(float time)
         {
@@ -19,11 +28,11 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars
         private IEnumerator SlowDown(float time)
         {
             isUsed = true;
-            car.Speed -= 5f;
+            car.Speed -= pathData.PenaltySpeedOil;
             car.MaxSpeed = car.Speed;
             yield return new WaitForSeconds(time);
-            car.Speed += 5f;
-            car.MaxSpeed = 15;
+            car.Speed += pathData.PenaltySpeedOil;
+            car.MaxSpeed = pathData.MaxSpeedCar;
             isUsed = false;
         }
     }

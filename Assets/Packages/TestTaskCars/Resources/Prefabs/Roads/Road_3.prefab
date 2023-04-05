@@ -159,8 +159,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85292987ad5a44db9ea7576fe2296096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftBord: {fileID: 9118105765966639411}
-  rightBord: {fileID: 1150208476391492647}
+  LeftBord: {fileID: 9118105765966639411}
+  RightBord: {fileID: 1150208476391492647}
+  Center: {fileID: 3946192717753471883}
 --- !u!1 &5827672730445026896
 GameObject:
   m_ObjectHideFlags: 0

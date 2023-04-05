@@ -1,11 +1,29 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using Packages.TestTaskCars.Scripts.Runtime.Data;
+using Packages.TestTaskCars.Scripts.Runtime.Level;
+using UnityEngine;
+using Zenject;
 
 namespace Packages.TestTaskCars.Scripts.Runtime.Cars
 {
     public class CarMover : MonoBehaviour, ICarMover
     {
-        public float MaxSpeed = 20;
+        public float MaxSpeed;
         public float Speed { get; set; }
+        
+        [SerializeField] private SpriteRenderer carRenderer;
+        
+        private float carSizeX;
+        private LevelConstructor levelConstructor;
+
+        [Inject]
+        public void Construct(PathData pathData, LevelConstructor levelConstructor)
+        {
+            this.levelConstructor = levelConstructor;
+
+            MaxSpeed = pathData.MaxSpeedCar;
+            carSizeX = carRenderer.bounds.size.x / 2;
+        }
 
         private void Update() =>
             Forward();
@@ -26,11 +44,23 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars
             }
         }
 
-        public void TurnRight() =>
-            transform.position += transform.right * Speed * Time.deltaTime;
+        public void TurnRight()
+        {
+            var offset = levelConstructor.Roads[levelConstructor.Roads.Count - 1].RightBord.position.x - carSizeX;
+            if (transform.position.x < offset)
+            {
+                transform.position += transform.right * Speed * Time.deltaTime;
+            }
+        }
 
-        public void TurnLeft() =>
-            transform.position -= transform.right * Speed * Time.deltaTime;
+        public void TurnLeft()
+        {
+            var offset = levelConstructor.Roads[levelConstructor.Roads.Count - 1].LeftBord.position.x + carSizeX;
+            if (transform.position.x > offset)
+            {
+                transform.position -= transform.right * Speed * Time.deltaTime;
+            }
+        }
 
         private void Forward()
         {
