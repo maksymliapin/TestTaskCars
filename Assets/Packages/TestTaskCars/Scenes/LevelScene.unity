@@ -153,8 +153,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 371180574}
-  - {fileID: 1778573278}
-  - {fileID: 1111044116}
   m_Father: {fileID: 2079629059}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -221,6 +219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85292987ad5a44db9ea7576fe2296096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftBord: {fileID: 446554380}
+  rightBord: {fileID: 988741214}
 --- !u!1 &134039143
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +401,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &306483920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 306483921}
+  m_Layer: 0
+  m_Name: PlayrParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &306483921
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306483920}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: -15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2079629059}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &316849358
 GameObject:
@@ -903,12 +933,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111044115}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -35.500004, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -35.500008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 95076806}
-  m_RootOrder: 2
+  m_Father: {fileID: 2079629059}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!212 &1111044117
 SpriteRenderer:
@@ -973,6 +1003,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85292987ad5a44db9ea7576fe2296096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftBord: {fileID: 0}
+  rightBord: {fileID: 0}
 --- !u!1 &1526317081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,8 +1312,6 @@ MonoBehaviour:
   Isleft: 0
   levelConstructor: {fileID: 1695680334}
   steeringWheel: {fileID: 472976878}
-  leftBord: {fileID: 446554380}
-  rightBord: {fileID: 988741214}
 --- !u!65 &1612179227
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1342,9 +1372,10 @@ MonoBehaviour:
   Roads:
   - {fileID: 1111044118}
   - {fileID: 95076808}
-  placePlayer: {fileID: 1778573278}
+  parentPlayer: {fileID: 306483921}
   cameraController: {fileID: 1778897089}
   buttons: {fileID: 1087261164}
+  mapGenerator: {fileID: 1695680335}
 --- !u!114 &1695680335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1458,8 +1489,6 @@ MonoBehaviour:
   Isleft: 1
   levelConstructor: {fileID: 1695680334}
   steeringWheel: {fileID: 472976878}
-  leftBord: {fileID: 446554380}
-  rightBord: {fileID: 988741214}
 --- !u!65 &1739171494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1473,36 +1502,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.0076475, y: 4.5657716, z: 0.20000005}
   m_Center: {x: 0.81823575, y: -0.105438285, z: -5.092127e-14}
---- !u!1 &1778573277
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1778573278}
-  m_Layer: 0
-  m_Name: PlaceSpawnCar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1778573278
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778573277}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -16.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 95076806}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1778897085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,8 +1555,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 13.15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1628,6 +1627,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 95076806}
+  - {fileID: 1111044116}
+  - {fileID: 306483921}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

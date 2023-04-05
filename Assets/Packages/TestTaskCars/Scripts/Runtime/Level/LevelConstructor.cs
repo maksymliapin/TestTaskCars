@@ -11,7 +11,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
         public Car Player { get; private set;}
         public List<Road> Roads;
 
-        [SerializeField] private Transform placePlayer;
+        [SerializeField] private Transform parentPlayer;
         [SerializeField] private CameraController cameraController;
         [SerializeField] private GameObject buttons;
         [SerializeField] private MapGenerator mapGenerator;
@@ -23,8 +23,8 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
 
         public void PrepareLevel()
         {
-            Player = playerCarFactory.CreatePlayer();
-            Player.transform.position = placePlayer.position;
+            Player = playerCarFactory.CreatePlayer(parentPlayer);
+            Player.transform.position = parentPlayer.position;
             cameraController.enabled = true;
             buttons.SetActive(true);
             mapGenerator.Subscribe();

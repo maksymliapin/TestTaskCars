@@ -4,8 +4,8 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars
 {
     public class CarMover : MonoBehaviour, ICarMover
     {
+        public float MaxSpeed = 20;
         public float Speed { get; set; }
-        private const float MaxSpeed = 10;
 
         private void Update() =>
             Forward();
