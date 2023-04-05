@@ -5,42 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="496d17d5-7f80-4e1d-aad0-2a95792cb790" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/DetectorCollisions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/DetectorCollisions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/DirectionCarController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/DirectionCarController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/PoliceCar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/PoliceCar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/PoliceCarFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/PoliceCarFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Data.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Data/PathData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Data/PathData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Common/EventHolder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Common/EventHolder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/PoliceActivator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/PoliceActivator.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestTaskCars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestTaskCars/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/DI/Installers/LevelSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/DI/Installers/LevelSceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Data/PathData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Data/PathData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Barriers/Block.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Barriers/Block.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Cars/Player/PlayerCar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Cars/Player/PlayerCar.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scenes/LevelScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scenes/LevelScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Fissure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Fissure.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Oil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Oil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/Car.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Car.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/Car.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/CarMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/CarMover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/EndRoadDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/EndRoadDetector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/EndRoadDetector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/EndRoadDetector.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/PlayerCarFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/PlayerCarFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/PlayerCarFactory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/PlayerCarFactory.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/SpeedPenaltyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/SpeedPenaltyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/SpeedPenaltyController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/SpeedPenaltyController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/DetectorCollisions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/DetectorCollisions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Data/PathData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Data/PathData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/LevelConstructor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/LevelConstructor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/Road.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/Road.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/TurnButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/TurnButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/MapGenerator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +35,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Packages/TestTaskCars/DI/Installers/GlobalInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/a0/72c376bf/Action.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -120,7 +99,7 @@
       <workItem from="1680532262525" duration="1208000" />
       <workItem from="1680535400733" duration="763000" />
       <workItem from="1680591392635" duration="7972000" />
-      <workItem from="1680605797076" duration="50160000" />
+      <workItem from="1680605797076" duration="53059000" />
     </task>
     <servers />
   </component>

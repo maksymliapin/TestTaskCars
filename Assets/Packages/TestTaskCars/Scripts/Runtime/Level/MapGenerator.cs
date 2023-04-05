@@ -13,8 +13,13 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
         public void Construct(RoadFactory roadFactory) => 
             this.roadFactory = roadFactory;
 
+        private void OnDestroy() => 
+            Unsubscribe();
+
         public void Subscribe() => 
             levelConstructor.Player.EndRoadDetector.EndRoad += UpdateMap;
+        public void Unsubscribe() => 
+            levelConstructor.Player.EndRoadDetector.EndRoad -= UpdateMap;
 
         private void UpdateMap()
         {

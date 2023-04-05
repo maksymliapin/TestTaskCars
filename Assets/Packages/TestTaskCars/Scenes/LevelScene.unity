@@ -1339,6 +1339,7 @@ GameObject:
   - component: {fileID: 1695680333}
   - component: {fileID: 1695680335}
   - component: {fileID: 1695680334}
+  - component: {fileID: 1695680336}
   m_Layer: 0
   m_Name: LevelConstructor
   m_TagString: Untagged
@@ -1393,6 +1394,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentRoads: {fileID: 2079629059}
   levelConstructor: {fileID: 1695680334}
+--- !u!114 &1695680336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695680332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e408a6ad40943bfb856bb2ad2f8548a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelConstructor: {fileID: 1695680334}
+  parentPlayer: {fileID: 2079629059}
 --- !u!1 &1739171490
 GameObject:
   m_ObjectHideFlags: 0

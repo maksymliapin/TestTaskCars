@@ -1,6 +1,7 @@
 using Packages.TestTaskCars.Scripts.Runtime.Cars;
 using Packages.TestTaskCars.Scripts.Runtime.Cars.Player;
 using Packages.TestTaskCars.Scripts.Runtime.Cars.Police;
+using Packages.TestTaskCars.Scripts.Runtime.Common;
 using Packages.TestTaskCars.Scripts.Runtime.Data;
 using Packages.TestTaskCars.Scripts.Runtime.Level;
 using UnityEngine;
@@ -16,6 +17,7 @@ namespace Packages.TestTaskCars.DI.Installers
         public override void InstallBindings()
         {
             Container.BindInstance(levelConstructor).AsSingle();
+            Container.Bind<EventHolder>().AsSingle();
             Container.Bind<RoadFactory>().AsSingle();
             Container.Bind<PoliceCarFactory>().AsSingle();
             Container.Bind<PlayerCarFactory>().AsSingle();

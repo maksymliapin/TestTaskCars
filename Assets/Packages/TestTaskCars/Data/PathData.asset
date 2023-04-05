@@ -15,3 +15,5 @@ MonoBehaviour:
   MaxSpeedCar: 15
   PenaltySpeedOil: 5
   PenaltyFissure: 3
+  TimeOutPolice: 60
+  SpeedPolice: 12
