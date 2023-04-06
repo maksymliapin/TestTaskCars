@@ -5,40 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="496d17d5-7f80-4e1d-aad0-2a95792cb790" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/HealthController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/HealthController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/Gold.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/Gold.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/ScoreBank.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/ScoreBank.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/HealthProgressBar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/HealthProgressBar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/ScoreCounter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/ScoreCounter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/Heard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/Heard.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestTaskCars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestTaskCars/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/DI/Installers/LevelSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/DI/Installers/LevelSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Data/PathData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Data/PathData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Barriers/Block.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Barriers/Block.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Barriers/Fissure_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Barriers/Fissure_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Barriers/Fissure_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Barriers/Fissure_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Barriers/Oil.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Barriers/Oil.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Cars/Player/PlayerCar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Cars/Player/PlayerCar.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scenes/LevelScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scenes/LevelScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Score/GoldsPlace.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Score/GoldsPlace.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Fissure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Fissure.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Oil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Oil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/CarMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/CarMover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/Car.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Common/EventHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Common/EventHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/HealthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/HealthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Data/PathData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Data/PathData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/LevelConstructor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/LevelConstructor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/PoliceActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/PoliceActivator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +96,7 @@
       <workItem from="1680535400733" duration="763000" />
       <workItem from="1680591392635" duration="7972000" />
       <workItem from="1680605797076" duration="58054000" />
-      <workItem from="1680771039055" duration="9822000" />
+      <workItem from="1680771039055" duration="11080000" />
     </task>
     <servers />
   </component>

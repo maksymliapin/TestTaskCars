@@ -7,6 +7,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Data
     {
         public float MaxSpeedCar;
         public float DefaultHealth;
+        public float HeardHealth;
         public float PenaltySpeedOil;
         public float PenaltyFissure;
         public float DamageFissure;

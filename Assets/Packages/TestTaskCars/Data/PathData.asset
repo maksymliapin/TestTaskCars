@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxSpeedCar: 15
   DefaultHealth: 100
+  HeardHealth: 25
   PenaltySpeedOil: 5
   PenaltyFissure: 3
   DamageFissure: 25

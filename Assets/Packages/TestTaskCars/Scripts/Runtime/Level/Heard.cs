@@ -3,9 +3,9 @@ using Packages.TestTaskCars.Scripts.Runtime.Data;
 using UnityEngine;
 using Zenject;
 
-namespace Packages.TestTaskCars.Scripts.Runtime.Barriers
+namespace Packages.TestTaskCars.Scripts.Runtime.Level
 {
-    public class Fissure : MonoBehaviour
+    public class Heard : MonoBehaviour
     {
         private PathData pathData;
 
@@ -18,9 +18,8 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Barriers
             if (other.gameObject.GetComponent<Car>())
             {
                 var car = other.gameObject.GetComponent<Car>();
-                car.CarMover.Speed -= pathData.PenaltyFissure;
-                car.HealthController.TakeDamage(pathData.DamageFissure);
-                Debug.Log("hereFisure");
+                car.HealthController.AddHealth(pathData.HeardHealth);
+                Destroy(gameObject);
             }
         }
     }

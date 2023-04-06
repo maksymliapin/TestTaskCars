@@ -29,7 +29,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
         {
             if (health < pathData.DefaultHealth)
             {
-                health = +value;
+                health += value;
                 eventHolder.OneChangeHealth(health);
             }
 
