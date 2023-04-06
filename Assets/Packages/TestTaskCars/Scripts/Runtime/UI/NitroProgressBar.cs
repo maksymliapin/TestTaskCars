@@ -6,7 +6,7 @@ using Zenject;
 
 namespace Packages.TestTaskCars.Scripts.Runtime.UI
 {
-    public class ShieldProgressBar : MonoBehaviour
+    public class NitroProgressBar : MonoBehaviour
     {
         [SerializeField] private Image image;
         private PathData pathData;
@@ -15,7 +15,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.UI
         public void Construct(EventHolder eventHolder, PathData pathData)
         {
             this.pathData = pathData;
-            eventHolder.ChangeShield += SetValue;
+            eventHolder.ChangeNitro += SetValue;
         }
 
         private void SetValue(float value) =>

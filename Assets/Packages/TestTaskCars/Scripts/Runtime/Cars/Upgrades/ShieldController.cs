@@ -29,10 +29,10 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
             eventHolder.OneActivateShied();
             IsActiveShield = true;
             shield.SetActive(true);
-            for (int i = 0; i < pathData.TimeShield; i++)
+            for (int i = 0; i < pathData.TimeBonus; i++)
             {
                 yield return new WaitForSeconds(1);
-                eventHolder.OneChangeShield(pathData.TimeShield -i);
+                eventHolder.OneChangeShield(pathData.TimeBonus -i);
             }
             shield.SetActive(false);
             IsActiveShield = false;

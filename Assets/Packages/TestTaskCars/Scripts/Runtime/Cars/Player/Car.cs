@@ -11,5 +11,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
         public SpeedPenaltyController SpeedPenaltyController;
         public HealthController HealthController;
         public ShieldController ShieldController;
+        public NitroController NitroController;
     }
 }

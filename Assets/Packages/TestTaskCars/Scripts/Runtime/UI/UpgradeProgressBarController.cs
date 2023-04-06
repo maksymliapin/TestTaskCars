@@ -18,8 +18,8 @@ namespace Packages.TestTaskCars.Scripts.Runtime.UI
             eventHolder.DeactivateShied += DeactivateShieldBar;
             eventHolder.ActivateMagnet += ActivateMagnetBar;
             eventHolder.DeactivateMagnet += DeactivateMagnetBar;
-            eventHolder.ActivateNitro += ActivateMagnetBar;
-            eventHolder.DeactivateNitro += DeactivateMagnetBar;
+            eventHolder.ActivateNitro += ActivateNitroBar;
+            eventHolder.DeactivateNitro += DeactivateNitroBar;
         }
 
         private void ActivateShieldBar() => 
