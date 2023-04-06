@@ -1,5 +1,4 @@
-﻿using DG.Tweening;
-using Packages.TestTaskCars.Scripts.Runtime.Data;
+﻿using Packages.TestTaskCars.Scripts.Runtime.Data;
 using Packages.TestTaskCars.Scripts.Runtime.Level;
 using UnityEngine;
 using Zenject;

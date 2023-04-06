@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Packages/TestTaskCars/Scenes/LevelScene.unity
+    guid: 93287d8126507bd44853ef3729c14e6e
   m_configObjects: {}

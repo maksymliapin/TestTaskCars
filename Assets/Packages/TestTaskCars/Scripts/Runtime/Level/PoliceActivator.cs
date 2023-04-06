@@ -39,7 +39,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
         private IEnumerator StartPolice()
         {
             yield return new WaitForSeconds(pathData.TimeOutPolice);
-            Debug.Log("here");
             var police = policeCarFactory.CreatePoliceCar(parentPlayer);
 
             var policePosition = police.transform.position;

@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: PathData
   m_EditorClassIdentifier: 
   MaxSpeedCar: 15
+  DefaultHealth: 100
   PenaltySpeedOil: 5
   PenaltyFissure: 3
+  DamageFissure: 25
   TimeOutPolice: 10
-  SpeedPolice: 10
+  SpeedDifferencePolice: 1
+  GoldValue: 10

@@ -1,5 +1,4 @@
-﻿using Packages.TestTaskCars.Scripts.Runtime.Cars;
-using Packages.TestTaskCars.Scripts.Runtime.Cars.Player;
+﻿using Packages.TestTaskCars.Scripts.Runtime.Cars.Player;
 using Packages.TestTaskCars.Scripts.Runtime.Data;
 using UnityEngine;
 using Zenject;
@@ -20,7 +19,8 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Barriers
                     {
                         var car = other.gameObject.GetComponent<Car>();
                         car.CarMover.Speed -= pathData.PenaltyFissure;
-
+                        car.HealthController.TakeDamage(pathData.DamageFissure);
+                        Debug.Log("hereFisure");
                     }
                 }
     }

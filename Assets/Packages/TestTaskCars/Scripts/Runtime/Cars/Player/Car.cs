@@ -8,5 +8,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
         public SpriteRenderer CarRenderer;
         public EndRoadDetector EndRoadDetector;
         public SpeedPenaltyController SpeedPenaltyController;
+        public HealthController HealthController;
     }
 }

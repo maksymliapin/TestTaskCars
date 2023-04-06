@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5701865502772160805}
   - component: {fileID: 7336198776620193906}
   - component: {fileID: -79197338432680793}
+  - component: {fileID: 2362635090203045487}
   m_Layer: 0
   m_Name: PlayerCar
   m_TagString: Untagged
@@ -66,6 +67,7 @@ MonoBehaviour:
   CarRenderer: {fileID: 3673091041049773510}
   EndRoadDetector: {fileID: 5701865502772160805}
   SpeedPenaltyController: {fileID: -79197338432680793}
+  HealthController: {fileID: 2362635090203045487}
 --- !u!114 &5701865502772160805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +91,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.22, y: 0.07, z: 3.37}
+  m_Size: {x: 2.22, y: 4, z: 3.37}
   m_Center: {x: -0.24, y: -0.05, z: -0.05}
 --- !u!114 &-79197338432680793
 MonoBehaviour:
@@ -104,6 +106,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   car: {fileID: 3673091040451118211}
+--- !u!114 &2362635090203045487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3673091040451118268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d2f74e7e7cf4794a053d8f9f160335e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3673091041049773504
 GameObject:
   m_ObjectHideFlags: 0
