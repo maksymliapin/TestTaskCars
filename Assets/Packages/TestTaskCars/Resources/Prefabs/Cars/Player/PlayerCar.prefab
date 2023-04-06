@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 5301694446308101656}
   - component: {fileID: 1590184749749081018}
   - component: {fileID: 1522504352847726065}
+  - component: {fileID: 3137962827066481941}
   m_Layer: 0
   m_Name: PlayerCar
   m_TagString: Untagged
@@ -282,6 +283,7 @@ MonoBehaviour:
   ShieldController: {fileID: 5301694446308101656}
   NitroController: {fileID: 1590184749749081018}
   MagnetController: {fileID: 1522504352847726065}
+  UpgradeChecker: {fileID: 3137962827066481941}
 --- !u!114 &5701865502772160805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,6 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shield: {fileID: 1439463615572257339}
+  upgradeChecker: {fileID: 3137962827066481941}
 --- !u!114 &1590184749749081018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,6 +362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nitro: {fileID: 1449146896391721192}
   carMover: {fileID: 3673091040451118211}
+  upgradeChecker: {fileID: 3137962827066481941}
 --- !u!114 &1522504352847726065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,6 +376,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magnet: {fileID: 1719557145759282255}
+  upgradeChecker: {fileID: 3137962827066481941}
+--- !u!114 &3137962827066481941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3673091040451118268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a669539b47f4a25aca7e1d9ee0bd0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3673091041049773504
 GameObject:
   m_ObjectHideFlags: 0

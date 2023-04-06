@@ -9,6 +9,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
     public class MagnetController : MonoBehaviour
     {
         [SerializeField] private GameObject magnet;
+        [SerializeField] private UpgradeChecker upgradeChecker;
         private PathData pathData;
         private EventHolder eventHolder;
 
@@ -24,6 +25,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
 
         private IEnumerator StartNitro()
         {
+            upgradeChecker.IsUsedUpgrade = true;
             eventHolder.OneActivateMagnet();
             magnet.SetActive(true);
 
@@ -35,6 +37,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
 
             magnet.SetActive(false);
             eventHolder.OneDeactivateMagnet();
+            upgradeChecker.IsUsedUpgrade = false;
         }
     }
 }

@@ -20,19 +20,30 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Police
         {
             if (other.GetComponent<Block>())
             {
-                eventHolder.OneResetPolice();
-                carMover.Speed = 0;
-                Instantiate(blast,transform.position,Quaternion.Euler(new Vector3(90,0,0)));
-                Destroy(gameObject);
+                DestroyPoliceCar();
             }
 
             if (other.GetComponent<Car>())
             {
-                other.GetComponent<Car>().CarMover.Speed = 0;
-                carMover.Speed = 0;
-                eventHolder.OneEndGame();
+                var car = other.GetComponent<Car>();
+                if (car.ShieldController.IsActiveShield)
+                {
+                    DestroyPoliceCar();
+                }
+                else
+                {
+                    car.CarMover.Speed = 0;
+                    carMover.Speed = 0;
+                    eventHolder.OneEndGame();
+                }
             }
         }
-        
+        private void DestroyPoliceCar()
+        {
+            eventHolder.OneResetPolice();
+            carMover.Speed = 0;
+            Instantiate(blast, transform.position, Quaternion.Euler(new Vector3(90, 0, 0)));
+            Destroy(gameObject);
+        }
     }
 }

@@ -5,17 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="496d17d5-7f80-4e1d-aad0-2a95792cb790" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/Magnet.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/Magnet.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/MagnetController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/MagnetController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/MagnetBonus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/MagnetBonus.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/MagnetProgressBar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/MagnetProgressBar.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/UpgradeChecker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/UpgradeChecker.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestTaskCars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestTaskCars/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Cars/Player/PlayerCar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Cars/Player/PlayerCar.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Resources/Prefabs/Roads/Road_6.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/Car.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/DetectorCollisions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/DetectorCollisions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/MagnetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/MagnetController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/NitroController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/NitroController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/ShieldController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/ShieldController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/MagnetBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/MagnetBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/NitroBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/NitroBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/ScoreBank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/ScoreBank.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/ShieldBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/ShieldBonus.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +101,7 @@
       <workItem from="1680535400733" duration="763000" />
       <workItem from="1680591392635" duration="7972000" />
       <workItem from="1680605797076" duration="58054000" />
-      <workItem from="1680771039055" duration="21246000" />
+      <workItem from="1680771039055" duration="23958000" />
     </task>
     <servers />
   </component>

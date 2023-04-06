@@ -13,5 +13,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
         public ShieldController ShieldController;
         public NitroController NitroController;
         public MagnetController MagnetController;
+        public UpgradeChecker UpgradeChecker;
     }
 }

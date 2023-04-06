@@ -9,8 +9,12 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
         {
             if (other.gameObject.GetComponent<Car>())
             {
-                other.gameObject.GetComponent<Car>().NitroController.ActivateNitro();
-                Destroy(gameObject);
+                var car = other.gameObject.GetComponent<Car>();
+                if (car.UpgradeChecker.IsUsedUpgrade == false)
+                {
+                    car.NitroController.ActivateNitro();
+                    Destroy(gameObject);
+                }
             }
         }
     }

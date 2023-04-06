@@ -11,6 +11,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
         public bool IsActiveShield { get; private set; }
 
         [SerializeField] private GameObject shield;
+        [SerializeField] private UpgradeChecker upgradeChecker;
         private PathData pathData;
         private EventHolder eventHolder;
 
@@ -26,6 +27,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
 
         private IEnumerator StartShield()
         {
+            upgradeChecker.IsUsedUpgrade = true;
             eventHolder.OneActivateShied();
             IsActiveShield = true;
             shield.SetActive(true);
@@ -37,6 +39,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
             shield.SetActive(false);
             IsActiveShield = false;
             eventHolder.OneDeactivateShied();
+            upgradeChecker.IsUsedUpgrade = false;
         }
     }
 }

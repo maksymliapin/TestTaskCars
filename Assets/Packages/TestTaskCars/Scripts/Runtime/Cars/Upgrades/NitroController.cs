@@ -10,6 +10,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
     {
         [SerializeField] private GameObject nitro;
         [SerializeField] private CarMover carMover;
+        [SerializeField] private UpgradeChecker upgradeChecker;
         private PathData pathData;
         private EventHolder eventHolder;
 
@@ -25,6 +26,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
 
         private IEnumerator StartNitro()
         {
+            upgradeChecker.IsUsedUpgrade = true;
             eventHolder.OneActivateNitro();
             carMover.MaxSpeed = pathData.MaxSpeedCar + 5;
             carMover.Speed = carMover.MaxSpeed;
@@ -39,6 +41,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
             carMover.Speed -= 5;
             nitro.SetActive(false);
             eventHolder.OneDeactivateNitro();
+            upgradeChecker.IsUsedUpgrade = false;
         }
     }
     
