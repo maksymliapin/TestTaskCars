@@ -20,8 +20,10 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
             var bestScore = PlayerPrefs.GetFloat("BestScore", 0);
             if (bestScore < score)
             {
-                PlayerPrefs.SetFloat("BestScore", bestScore);
+                PlayerPrefs.SetFloat("BestScore",score);
             }
         }
+        public float GetScoreCounter() => 
+            score;
     }
 }
