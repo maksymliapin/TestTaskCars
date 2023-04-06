@@ -1,7 +1,7 @@
 ﻿using Packages.TestTaskCars.Scripts.Runtime.Cars.Player;
 using UnityEngine;
 
-namespace Packages.TestTaskCars.Scripts.Runtime.Level
+namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
 {
     public class MagnetBonus : MonoBehaviour
     {

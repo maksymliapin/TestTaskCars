@@ -23,6 +23,10 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
         {
             health -= value;
             eventHolder.OneChangeHealth(health);
+            if (health <= 0)
+            {
+                eventHolder.OneEndGame();
+            }
         }
 
         public void AddHealth(float value)
@@ -31,11 +35,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
             {
                 health += value;
                 eventHolder.OneChangeHealth(health);
-            }
-
-            if (health <= 0)
-            {
-                eventHolder.OneEndGame();
             }
         }
     }

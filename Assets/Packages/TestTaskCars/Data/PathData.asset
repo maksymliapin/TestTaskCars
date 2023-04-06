@@ -18,7 +18,7 @@ MonoBehaviour:
   PenaltySpeedOil: 5
   PenaltyFissure: 3
   DamageFissure: 25
-  TimeOutPolice: 10
+  TimeOutPolice: 60
   SpeedDifferencePolice: 1
   GoldValue: 10
   TimeBonus: 15

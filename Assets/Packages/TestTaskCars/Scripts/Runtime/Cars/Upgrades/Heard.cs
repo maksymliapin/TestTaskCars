@@ -3,7 +3,7 @@ using Packages.TestTaskCars.Scripts.Runtime.Data;
 using UnityEngine;
 using Zenject;
 
-namespace Packages.TestTaskCars.Scripts.Runtime.Level
+namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
 {
     public class Heard : MonoBehaviour
     {

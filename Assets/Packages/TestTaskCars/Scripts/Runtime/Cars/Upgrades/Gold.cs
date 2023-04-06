@@ -1,9 +1,10 @@
 ﻿using Packages.TestTaskCars.Scripts.Runtime.Cars.Player;
 using Packages.TestTaskCars.Scripts.Runtime.Data;
+using Packages.TestTaskCars.Scripts.Runtime.Level;
 using UnityEngine;
 using Zenject;
 
-namespace Packages.TestTaskCars.Scripts.Runtime.Level
+namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
 {
     public class Gold : MonoBehaviour
     {

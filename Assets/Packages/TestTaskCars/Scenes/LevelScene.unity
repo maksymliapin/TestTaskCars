@@ -4700,6 +4700,7 @@ GameObject:
   - component: {fileID: 1695680335}
   - component: {fileID: 1695680334}
   - component: {fileID: 1695680336}
+  - component: {fileID: 1695680337}
   m_Layer: 0
   m_Name: LevelConstructor
   m_TagString: Untagged
@@ -4768,6 +4769,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelConstructor: {fileID: 1695680334}
   parentPlayer: {fileID: 306483921}
+--- !u!114 &1695680337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695680332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9183410f81f54852adbed4027942b2b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endGameMenu: {fileID: 1329181593}
+  gameInterface: {fileID: 1899861472}
 --- !u!4 &1718609390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1010216329688646043, guid: 7727a4959b5d92d4e9677bfad8ec0d75, type: 3}
@@ -5446,7 +5461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1899861473
 RectTransform:
   m_ObjectHideFlags: 0
