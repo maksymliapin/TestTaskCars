@@ -14,5 +14,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Data
         public float TimeOutPolice;
         public float SpeedDifferencePolice;
         public float GoldValue;
+        public float TimeShield;
     }
 }

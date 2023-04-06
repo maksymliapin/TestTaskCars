@@ -18,9 +18,12 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Barriers
             if (other.gameObject.GetComponent<Car>())
             {
                 var car = other.gameObject.GetComponent<Car>();
-                car.CarMover.Speed -= pathData.PenaltyFissure;
-                car.HealthController.TakeDamage(pathData.DamageFissure);
-                Debug.Log("hereFisure");
+                if (car.ShieldController.IsActiveShield == false)
+                {
+                    car.CarMover.Speed -= pathData.PenaltyFissure;
+                    car.HealthController.TakeDamage(pathData.DamageFissure);
+                    Debug.Log("hereFisure");
+                }
             }
         }
     }

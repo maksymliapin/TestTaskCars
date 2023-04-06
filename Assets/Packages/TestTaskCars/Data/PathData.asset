@@ -21,3 +21,4 @@ MonoBehaviour:
   TimeOutPolice: 10
   SpeedDifferencePolice: 1
   GoldValue: 10
+  TimeShield: 10

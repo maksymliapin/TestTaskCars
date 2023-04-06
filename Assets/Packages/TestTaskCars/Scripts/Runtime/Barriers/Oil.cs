@@ -10,8 +10,11 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Barriers
             if (other.gameObject.GetComponent<Car>())
             {
                 var car = other.gameObject.GetComponent<Car>();
-                car.SpeedPenaltyController.StartPenalty(10);
-                Debug.Log("hereOil");
+                if (car.ShieldController.IsActiveShield == false)
+                {
+                    car.SpeedPenaltyController.StartPenalty(10);
+                    Debug.Log("hereOil");
+                }
             }
         }
     }

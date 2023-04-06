@@ -1,3 +1,4 @@
+using Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades;
 using UnityEngine;
 
 namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
@@ -9,5 +10,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
         public EndRoadDetector EndRoadDetector;
         public SpeedPenaltyController SpeedPenaltyController;
         public HealthController HealthController;
+        public ShieldController ShieldController;
     }
 }
