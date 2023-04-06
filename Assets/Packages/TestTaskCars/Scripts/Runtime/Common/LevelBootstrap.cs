@@ -7,8 +7,14 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Common
     {
         [SerializeField] private LevelConstructor levelConstructor;
 
-        private void Awake()
+        private void Awake() => 
+            StartGame();
+
+        private void StartGame()
         {
+            QualitySettings.vSyncCount = 0;
+            Application.targetFrameRate = 60;
+            
             levelConstructor.PrepareLevel();
         }
     }

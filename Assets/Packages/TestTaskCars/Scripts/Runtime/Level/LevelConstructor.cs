@@ -23,12 +23,21 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
 
         public void PrepareLevel()
         {
-            Player = playerCarFactory.CreatePlayer(parentPlayer);
-            Player.transform.position = parentPlayer.position;
-            cameraController.enabled = true;
+            CreatPlayerCar();
+            PrepareCamera();
+            
             gameInterface.SetActive(true);
             mapGenerator.Subscribe();
             
+        }
+
+        private void PrepareCamera() => 
+            cameraController.enabled = true;
+
+        private void CreatPlayerCar()
+        {
+            Player = playerCarFactory.CreatePlayer(parentPlayer);
+            Player.transform.position = parentPlayer.position;
         }
     }
 }
