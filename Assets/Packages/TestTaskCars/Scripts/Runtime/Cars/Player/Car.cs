@@ -12,5 +12,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
         public HealthController HealthController;
         public ShieldController ShieldController;
         public NitroController NitroController;
+        public MagnetController MagnetController;
     }
 }
