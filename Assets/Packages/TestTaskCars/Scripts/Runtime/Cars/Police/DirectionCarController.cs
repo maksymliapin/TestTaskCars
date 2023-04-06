@@ -1,4 +1,5 @@
-﻿using Packages.TestTaskCars.Scripts.Runtime.Level;
+﻿using Packages.TestTaskCars.Scripts.Runtime.Common;
+using Packages.TestTaskCars.Scripts.Runtime.Level;
 using UnityEngine;
 using Zenject;
 
@@ -8,11 +9,16 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Police
     {
         [SerializeField] private CarMover carMover;
         [SerializeField] private BoxCollider colliderPoliceCar;
+        
         private LevelConstructor levelConstructor;
+        private EventHolder eventHolder;
 
         [Inject]
-        public void Construct(LevelConstructor levelConstructor) =>
+        public void Construct(LevelConstructor levelConstructor,EventHolder eventHolder)
+        {
             this.levelConstructor = levelConstructor;
+            this.eventHolder = eventHolder;
+        }
 
         private void Update()
         {
@@ -35,6 +41,12 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Police
                 {
                     colliderPoliceCar.enabled = false;
                 }
+            }
+
+            if (transform.position.z < levelConstructor.Player.transform.position.z - 12f)
+            {
+                eventHolder.OneResetPolice();
+                Destroy(gameObject);
             }
         }
     }

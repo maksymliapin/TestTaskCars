@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Packages.TestTaskCars.Scripts.Runtime.Cars.Police;
+using Packages.TestTaskCars.Scripts.Runtime.Common;
 using Packages.TestTaskCars.Scripts.Runtime.Data;
 using UnityEngine;
 using Zenject;
@@ -10,22 +11,32 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
     {
         [SerializeField] private LevelConstructor levelConstructor;
         [SerializeField] private Transform parentPlayer;
+        
         private PoliceCarFactory policeCarFactory;
         private PathData pathData;
+        private EventHolder eventHolder;
+        
+        private const int Offset = 10;
 
         [Inject]
-        public void Construct(PoliceCarFactory policeCarFactory, PathData pathData)
+        public void Construct(PoliceCarFactory policeCarFactory, PathData pathData, EventHolder eventHolder)
         {
             this.policeCarFactory = policeCarFactory;
             this.pathData = pathData;
+            this.eventHolder = eventHolder;
         }
 
         private void Awake()
         {
-            StartCoroutine(ActivatePolice());
+            eventHolder.ResetPolice += ActivatePolice;
+
+            ActivatePolice();
         }
 
-        private IEnumerator ActivatePolice()
+        private void ActivatePolice() =>
+            StartCoroutine(StartPolice());
+
+        private IEnumerator StartPolice()
         {
             yield return new WaitForSeconds(pathData.TimeOutPolice);
             Debug.Log("here");
@@ -33,10 +44,10 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
 
             var policePosition = police.transform.position;
             policePosition = new Vector3(policePosition.x, policePosition.y,
-                levelConstructor.Player.transform.position.z - 8);
-            
+                levelConstructor.Player.transform.position.z - Offset);
             police.transform.position = policePosition;
-            police.CarMover.Speed = pathData.SpeedPolice;
+
+            police.CarMover.Speed = levelConstructor.Player.CarMover.Speed + pathData.SpeedDifferencePolice;
         }
     }
 }

@@ -9,6 +9,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Data
         public float PenaltySpeedOil;
         public float PenaltyFissure;
         public float TimeOutPolice;
-        public float SpeedPolice;
+        public float SpeedDifferencePolice;
     }
 }

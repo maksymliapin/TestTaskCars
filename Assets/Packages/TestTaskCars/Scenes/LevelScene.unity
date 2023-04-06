@@ -1407,7 +1407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelConstructor: {fileID: 1695680334}
-  parentPlayer: {fileID: 2079629059}
+  parentPlayer: {fileID: 306483921}
 --- !u!1 &1739171490
 GameObject:
   m_ObjectHideFlags: 0
