@@ -18,7 +18,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.UI
             eventHolder.ChangeHealth += SetValue;
         }
 
-        private void SetValue(float value) => 
-            image.fillAmount = value/pathData.DefaultHealth;
+        private void SetValue(float value) =>
+            image.fillAmount = value / pathData.DefaultHealth;
     }
 }

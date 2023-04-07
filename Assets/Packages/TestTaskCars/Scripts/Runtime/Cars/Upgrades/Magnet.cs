@@ -1,5 +1,4 @@
 ﻿using DG.Tweening;
-using Packages.TestTaskCars.Scripts.Runtime.Level;
 using UnityEngine;
 
 namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades

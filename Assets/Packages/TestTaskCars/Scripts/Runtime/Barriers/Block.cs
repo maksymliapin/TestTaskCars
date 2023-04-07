@@ -20,7 +20,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Barriers
                 var car = other.gameObject.GetComponent<Car>();
                 car.CarMover.Speed = 0;
                 eventHolder.OneEndGame();
-                Debug.Log("hereBlock");
             }
         }
     }

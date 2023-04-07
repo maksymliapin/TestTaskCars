@@ -1,5 +1,4 @@
-﻿using Packages.TestTaskCars.Scripts.Runtime.Cars;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Packages.TestTaskCars.Scripts.Runtime.Barriers
 {

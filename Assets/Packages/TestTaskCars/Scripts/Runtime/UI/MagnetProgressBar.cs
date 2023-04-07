@@ -17,6 +17,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.UI
             this.pathData = pathData;
             eventHolder.ChangeMagnet += SetValue;
         }
+
         private void SetValue(float value) =>
             image.fillAmount = value / pathData.TimeBonus;
     }

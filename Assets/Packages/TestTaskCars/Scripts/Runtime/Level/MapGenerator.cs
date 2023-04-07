@@ -18,7 +18,8 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
 
         public void Subscribe() => 
             levelConstructor.Player.EndRoadDetector.EndRoad += UpdateMap;
-        public void Unsubscribe() => 
+
+        private void Unsubscribe() => 
             levelConstructor.Player.EndRoadDetector.EndRoad -= UpdateMap;
 
         private void UpdateMap()

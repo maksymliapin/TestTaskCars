@@ -22,7 +22,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Barriers
                 {
                     car.CarMover.Speed -= pathData.PenaltyFissure;
                     car.HealthController.TakeDamage(pathData.DamageFissure);
-                    Debug.Log("hereFisure");
                 }
             }
         }

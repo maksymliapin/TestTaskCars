@@ -18,20 +18,19 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
         private PlayerCarFactory playerCarFactory;
 
         [Inject]
-        public void Construct(PlayerCarFactory playerCarFactory) => 
+        public void Construct(PlayerCarFactory playerCarFactory) =>
             this.playerCarFactory = playerCarFactory;
 
         public void PrepareLevel()
         {
             CreatPlayerCar();
             PrepareCamera();
-            
+
             gameInterface.SetActive(true);
             mapGenerator.Subscribe();
-            
         }
 
-        private void PrepareCamera() => 
+        private void PrepareCamera() =>
             cameraController.enabled = true;
 
         private void CreatPlayerCar()

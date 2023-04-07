@@ -11,10 +11,8 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
         private LevelConstructor levelConstructor;
 
         [Inject]
-        public void Construct(LevelConstructor levelConstructor)
-        {
+        public void Construct(LevelConstructor levelConstructor) =>
             this.levelConstructor = levelConstructor;
-        }
 
         private void Update()
         {

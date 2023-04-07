@@ -13,7 +13,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Barriers
                 if (car.ShieldController.IsActiveShield == false)
                 {
                     car.SpeedPenaltyController.StartPenalty(10);
-                    Debug.Log("hereOil");
                 }
             }
         }

@@ -5,7 +5,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Police
 {
     public class Blast : MonoBehaviour
     {
-        private void Awake() => 
+        private void Awake() =>
             StartCoroutine(StartBlast());
 
         private IEnumerator StartBlast()

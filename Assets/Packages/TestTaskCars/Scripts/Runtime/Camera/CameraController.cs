@@ -17,7 +17,6 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Camera
             var positionCamera = mainCamera.transform.position;
             positionCamera = new Vector3(positionCamera.x, positionCamera.y,
                 levelConstructor.Player.transform.position.z + Offset);
-
             mainCamera.transform.position = positionCamera;
         }
     }

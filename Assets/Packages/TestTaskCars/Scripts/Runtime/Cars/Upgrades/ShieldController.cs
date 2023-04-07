@@ -16,13 +16,13 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
         private EventHolder eventHolder;
 
         [Inject]
-        public void Construct(PathData pathData,EventHolder eventHolder)
+        public void Construct(PathData pathData, EventHolder eventHolder)
         {
             this.pathData = pathData;
             this.eventHolder = eventHolder;
         }
 
-        public void ActivateShield() => 
+        public void ActivateShield() =>
             StartCoroutine(StartShield());
 
         private IEnumerator StartShield()
@@ -34,8 +34,9 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
             for (int i = 0; i < pathData.TimeBonus; i++)
             {
                 yield return new WaitForSeconds(1);
-                eventHolder.OneChangeShield(pathData.TimeBonus -i);
+                eventHolder.OneChangeShield(pathData.TimeBonus - i);
             }
+
             shield.SetActive(false);
             IsActiveShield = false;
             eventHolder.OneDeactivateShied();

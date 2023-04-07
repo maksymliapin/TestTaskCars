@@ -6,11 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="496d17d5-7f80-4e1d-aad0-2a95792cb790" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestTaskCars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestTaskCars/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Data/PathData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Data/PathData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scenes/LevelScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scenes/LevelScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Common/LevelBootstrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Common/LevelBootstrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Barrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Barrier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Fissure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Fissure.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Oil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Barriers/Oil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Camera/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/EndRoadDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/EndRoadDetector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/PlayerCarFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/PlayerCarFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/SpeedPenaltyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Player/SpeedPenaltyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/Blast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/Blast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/PoliceCarFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Police/PoliceCarFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/Gold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/Gold.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/Magnet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/Magnet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/ShieldController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Cars/Upgrades/ShieldController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Common/EventHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Common/EventHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/EndGameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/EndGameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/LevelConstructor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/LevelConstructor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/MapGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/MapGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/PoliceActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/PoliceActivator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/RoadFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/Level/RoadFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/HealthProgressBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/HealthProgressBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/MagnetProgressBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/MagnetProgressBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/ShieldProgressBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/ShieldProgressBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/UpgradeProgressBarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TestTaskCars/Scripts/Runtime/UI/UpgradeProgressBarController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +110,7 @@
       <workItem from="1680535400733" duration="763000" />
       <workItem from="1680591392635" duration="7972000" />
       <workItem from="1680605797076" duration="58054000" />
-      <workItem from="1680771039055" duration="29258000" />
+      <workItem from="1680771039055" duration="30980000" />
     </task>
     <servers />
   </component>

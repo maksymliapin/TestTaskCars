@@ -12,7 +12,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Upgrades
         private PathData pathData;
 
         [Inject]
-        public void Construct(ScoreBank scoreBank,PathData pathData)
+        public void Construct(ScoreBank scoreBank, PathData pathData)
         {
             this.scoreBank = scoreBank;
             this.pathData = pathData;

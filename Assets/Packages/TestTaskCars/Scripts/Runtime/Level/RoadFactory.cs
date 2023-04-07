@@ -9,6 +9,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
     {
         private List<GameObject> loadRoads = new List<GameObject>();
         private readonly DiContainer container;
+        private const string Path = "Prefabs/Roads";
 
         [Inject]
         public RoadFactory(DiContainer container)
@@ -19,7 +20,7 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
         }
 
         private void LoadRoad() =>
-            loadRoads = Resources.LoadAll<GameObject>("Prefabs/Roads").ToList();
+            loadRoads = Resources.LoadAll<GameObject>(Path).ToList();
 
         public Road CreateRoad(Transform parent)
         {

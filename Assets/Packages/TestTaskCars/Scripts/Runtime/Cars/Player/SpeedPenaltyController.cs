@@ -12,10 +12,8 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Cars.Player
         private PathData pathData;
 
         [Inject]
-        public void Construct(PathData pathData)
-        {
+        public void Construct(PathData pathData) => 
             this.pathData = pathData;
-        }
 
         public void StartPenalty(float time)
         {

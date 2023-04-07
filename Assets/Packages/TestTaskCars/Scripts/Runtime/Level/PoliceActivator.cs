@@ -11,11 +11,11 @@ namespace Packages.TestTaskCars.Scripts.Runtime.Level
     {
         [SerializeField] private LevelConstructor levelConstructor;
         [SerializeField] private Transform parentPlayer;
-        
+
         private PoliceCarFactory policeCarFactory;
         private PathData pathData;
         private EventHolder eventHolder;
-        
+
         private const int Offset = 10;
 
         [Inject]
